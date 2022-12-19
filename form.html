@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form</title>
+</head>
+<body>
+	<h1>Hire me</h1>
+	<h3>Contact information</h3>
+	<table border="1" cellspacing="0" cellpadding="10px">
+		<tbody>
+			<tr>
+				<td>
+					<strong>Phone</strong>
+				</td>
+				<td>
+					+380976881330
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<strong>Address</strong>
+				</td>
+				<td>
+					Somewhere in Ukraine
+				</td>
+			</tr>
+		</tbody>
+	</table><br />
+	<form action="/form.html" method="get">
+		<fieldset>
+			<legend>Contact form</legend>
+			<table>
+				<tbody>
+					<tr>
+						<td><label>E-mail:</label></td>
+						<td><input
+							type="email"
+							required
+							name="E-mail">
+						</td>
+					</tr>
+					<tr>
+						<td valign="top"><label for="description">Description:</label></td>
+						<td><textarea
+							id="description"
+							name="description"
+							rows="10" 
+							cols="40"
+							></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td><label>Work type:</label></td>
+						<td>
+							<select name="Work type:">
+							<option value="Work in the office">Work in the office</option>
+							<option value="Remote work">Remote work</option>
+							<option value="One-time project">One-time project</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td><input type="submit" value="Hire me"></td>
+					</tr>
+				</tbody>
+			</table>
+		</fieldset>
+	</form>
+</body>
+</html>
