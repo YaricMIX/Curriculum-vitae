@@ -1,0 +1,32 @@
+body{
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.full-name{
+	font-style: oblique;
+}
+.heading{
+	font-weight: bold;
+}
+.topic{
+	text-transform: uppercase;
+	text-align: left;
+	vertical-align: top;
+}
+.info{
+	text-align: center;
+}
+a{
+	color: #00f;
+	text-decoration: underline;
+}
+a:visited{
+	color: #005;
+	text-decoration: underline;
+}
+a:hover{
+	text-decoration: none;
+}
+.skills{
+	list-style-type: square;
+}

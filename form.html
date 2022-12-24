@@ -12,17 +12,17 @@
 	<table border="1" cellspacing="0" cellpadding="10px">
 		<tbody>
 			<tr>
-				<td>
+				<th>
 					<strong>Phone</strong>
-				</td>
+				</th>
 				<td>
 					+380976881330
 				</td>
 			</tr>
 			<tr>
-				<td>
+				<th>
 					<strong>Address</strong>
-				</td>
+				</th>
 				<td>
 					Somewhere in Ukraine
 				</td>
@@ -35,9 +35,10 @@
 			<table>
 				<tbody>
 					<tr>
-						<td><label>E-mail:</label></td>
+						<td><label for="email">E-mail:</label></td>
 						<td><input
 							type="email"
+							id="email"
 							required
 							name="E-mail">
 						</td>
@@ -53,9 +54,9 @@
 						</td>
 					</tr>
 					<tr>
-						<td><label>Work type:</label></td>
+						<td><label for="work-type">Work type:</label></td>
 						<td>
-							<select name="Work type:">
+							<select name="Work type:" id="work-type">
 							<option value="Work in the office">Work in the office</option>
 							<option value="Remote work">Remote work</option>
 							<option value="One-time project">One-time project</option>
