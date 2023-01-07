@@ -2,6 +2,20 @@ body{
 	color: #333;
 	font-family: Arial, Helvetica, sans-serif;
 }
+.short-description{
+	display: flex;
+	justify-content: space-between;
+}
+.short-info{
+	display: flex;
+	flex-direction: column;
+}
+.basic-information{
+	border-bottom: 1px solid rgb(0, 174, 255);
+}
+.basic-information table{
+	width: 100%;
+}
 .full-name{
 	font-style: oblique;
 }
@@ -20,8 +34,10 @@ body{
 	border-bottom: 1px solid rgb(0, 174, 255);
 }
 img{
+	display: flex;
 	border: 2px solid rgb(0, 174, 255);
 	padding: 10px;
+	margin-top: 10px;
 }
 table{
 	background-color: rgb(172, 216, 218);
