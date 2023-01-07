@@ -56,6 +56,9 @@ a:visited{
 a:hover{
 	text-decoration: none;
 }
+ol{
+	margin: 16px 0px 0px 0px;
+}
 .skills{
 	list-style-type: square;
 }
