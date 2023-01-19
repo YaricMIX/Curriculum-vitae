@@ -4,64 +4,93 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 	<title>Curriculum vitae</title>
 </head>
 <body>
-	<div class="short-description">
-		<div class="short-info">
-			<h1 class="full-name significant">Yaroslav Livachov</h1>
-			<h3 class="heading significant">Student</h3>
+	<header>
+		<h1 class="Fullname">Yaroslav <span>Livachov</span></h1>
+		<img src="./img/my photo.jpg">
+		<div class="contact">
+			<h2>Contact</h2>
+			<hr>
+			<dl class="contact-list">
+				<dt>Address</dt>
+				<dd>Zaporozhye, Ukraine</dd>
+				<dt>Phone</dt>
+				<dd>+380976881330</dd>
+				<dt>E-mail</dt>
+				<dd><a href="mailto:aroslavlivachov@gmail.com">aroslavlivachov@gmail.com</a></dd>
+				<dt>Instagram</dt>
+				<dd><a href="https://www.instagram.com/yaricmix/">https://www.instagram.com/yaricmix/</a></dd>
+			</dl>
+			<h2>Languages</h2>
+			<hr>
+			<ul class="languages-list">
+				<li>Ukrainian - B2</li>
+				<li>English - B1</li>
+			</ul>
 		</div>
-		<img src="./img/my photo.jpg" alt="My photo" width="100px" height="100px">
-	</div>
-	<div class="basic-information">
-		<h2>Education experience</h2>
-		<table border="1" cellspacing="0" cellpadding="10x">
-			<thead>
-				<tr>
-					<th class="topic">Period:</th>
-					<th class="topic info">Position</th>
-				</tr>
-			</thead>
+	</header>
+	<section class="main">
+		<h2>Summary</h2>
+		<hr>
+		<p class="about">I am a first-year student at the Kharkov Aerospace Institute, before that I studied at the Zaporozhye Academic Lyceum No. 34 and graduated from there 11 classes, I also study the frontend in robotdreams.</p>
+		<h2>Skills Highlights</h2>
+		<hr>
+		<ul class="skill-list">
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>Ukraine</li>
+			<li>English</li>
+			<li>Compas 3D</li>
+			<li>Photoshop</li>
+			<li>Pascal</li>
+			<li>Office</li>
+		</ul>
+		<h2>Learning experience</h2>
+		<hr>
+		<table class="experience" cellspacing="0" cellpadding="0">
 			<tbody>
 				<tr>
-					<td>2022 - 2028</td>
-					<td>Studying at <a href="https://khai.edu/ua/">XAI</a> the 5th faculty</td>
+					<th>Institution name:</th>
+					<td>Kharkiv Aviation Institute named after. M.Є. Zhukovsky</td>
 				</tr>
 				<tr>
-					<th rowspan="2" class="topic">Description</th>
-					<td>I study at the Faculty of Radio Electronics, Computer Systems and Infocommunication</td>				
+					<th>Period of study:</th>
+					<td>09/2023 - Present</td>
 				</tr>
 				<tr>
-					<td>I'm on a scholarship with no chance to fly out of it</td>
-				</tr>
-				<tr>
-					<td>2011 - 2022</td>
-					<td>Studied at the <a href="https://zplicey34.school.social">Zaporozhye Academic Lyceum №34</a></td>
-				</tr>
-				<tr>
-					<th rowspan="2"  class="topic">Description</th>
-					<td>He was the winner of Olympiads in programming and information and computer technologies</td>
-				</tr>
-				<tr>
-					<td>Helped at school on technical issues</td>
+					<th>Apprentice rank:</th>
+					<td>Student</td>
 				</tr>
 			</tbody>
 		</table>
-		<h2 class="heading">Skills:</h2>
-		<ul class="skills">
-			<li>HTML</li>
-			<li>Computer techologies</li>
-			<li>Computer graphics radio engineering</li>
+		<table class="experience" cellspacing="0" cellpadding="0">
+			<tbody>
+				<tr>
+					<th>Institution name:</th>
+					<td>Zaporozhye Academic Lyceum</td>
+				</tr>
+				<tr>
+					<th>Period of study:</th>
+					<td>09/2012 - 2023</td>
+				</tr>
+				<tr>
+					<th>Apprentice rank:</th>
+					<td>pupil</td>
+				</tr>
+			</tbody>
+		</table>
+		<h2>Education</h2>
+		<hr>
+		<ul class="education-list">
+			<li><span>Dates of studying:</span> from 2023 - present</li>
+			<li><span>Name of institution:</span> Kharkiv Aviation Institute named after. M.Є. Zhukovsky</li>
 		</ul>
-		<h2 class="heading">Achievments:</h2>
-		<ol>
-			<li>Won the regional Olympiad in programming</li>
-			<li>Entered the institute on a budget</li>
-			<li>Received the certificate of assertive communication</li>
-		</ol>
-	</div>
-	<a href="./form.html">Offer a job</a>
+	</section>
 </body>
 </html>

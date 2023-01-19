@@ -1,64 +1,108 @@
+h1,h2,h3,h4{
+	text-transform: capitalize;
+}
 body{
-	color: #333;
-	font-family: Arial, Helvetica, sans-serif;
-}
-.short-description{
 	display: flex;
-	justify-content: space-between;
+	font-family: 'Inter';
+	font-style: normal;
+	color: #1E1E1E;
 }
-.short-info{
+header{
 	display: flex;
+	background-color: #86A3B4;
 	flex-direction: column;
+	width: 390px;
 }
-.basic-information{
-	border-bottom: 1px solid rgb(0, 174, 255);
+hr{
+	border: 6px solid #1E1E1E; 
+	width: 289px; 
+	margin: 0;
 }
-.basic-information table{
-	width: 100%;
-}
-.full-name{
-	font-style: oblique;
-}
-.heading{
-	font-weight: bold;
-}
-.topic{
-	text-transform: uppercase;
-	text-align: left;
-	vertical-align: top;
-}
-.info{
-	text-align: center;
-}
-.significant{
-	border-bottom: 1px solid rgb(0, 174, 255);
-}
-img{
+.Fullname{
 	display: flex;
-	border: 2px solid rgb(0, 174, 255);
-	padding: 10px;
-	margin-top: 10px;
+	font-size: 40px;
+	line-height: 48px;
+	color: #FFFFFF;
+	flex-direction: column;
+	margin: 58px 85px 36px 40px;
 }
-table{
-	background-color: rgb(172, 216, 218);
+.Fullname span{
+	color: #1C2E8C;
 }
-th{
-	background-color: rgb(5, 143, 143);
+header img{
+	width: 390px;
+	height: 300px;
 }
-a{
-	color: #00f;
-	text-decoration: underline;
+.contact{
+	margin: 50px 0 0 40px;
 }
-a:visited{
-	color: #005;
-	text-decoration: underline;
+.contact h2{
+	margin-bottom: 15px;
 }
-a:hover{
-	text-decoration: none;
+.contact-list{
+	margin-top: 31px;
 }
-ol{
-	margin: 16px 0px 0px 0px;
+.contact-list dt{
+	font-size: 24px;
 }
-.skills{
-	list-style-type: square;
+.contact-list dd{
+	margin: 11px 0 36px 0;
+	font-size: 16px;
+}
+ul{
+	list-style-type: none;
+}
+.languages-list{
+	margin: 23px 0 0 0;
+	padding: 0;
+}
+.languages-list li{
+	margin-bottom: 15px;
+	font-size: 20px;
+}
+.main{
+	margin: 58px 0 0 55px;
+	width: 700px;
+}
+.main h2{
+	margin-bottom: 28px;
+}
+.main hr{
+	width: auto;
+}
+.about {
+	margin-top: 28px;
+	margin-bottom: 49px;
+	font-size: 16px;
+}
+.skill-list{
+	list-style-type: disc;
+	margin-top: 28px;
+	padding-left: 20px;
+	column-count: 2;
+	font-size: 16px;
+	margin-bottom: 49px;
+}
+.skill-list li{
+	color: #263036;
+}
+.experience{
+	margin-top: 31px;
+	font-size: 14px;
+	padding: 0;
+	text-align: left;
+	margin-bottom: 53px;
+}
+.experience th{
+	padding: 0;
+}
+.experience td{
+	color: rgb(82, 81, 81);
+}
+.education-list{
+	padding: 0;
+	color: rgb(82, 81, 81);
+}
+.education-list span{
+	color: #1E1E1E;
 }
