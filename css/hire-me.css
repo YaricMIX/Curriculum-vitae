@@ -1,0 +1,104 @@
+body{
+	width: 1024px;
+	margin: auto;
+	padding: 0;
+}
+table th, td{
+	border: 0;
+}
+input,
+select,
+textarea{
+	appearance: none;
+	background-color: transparent;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+.info .info-label, .info-main{
+	border: 1px solid;
+	border-spacing: 0;
+	padding: 10px;
+}
+.info{
+	border: 1px solid;
+	border-spacing: 0;
+	padding: 0;
+}
+.contact td{
+	padding-bottom: 20px;
+}
+input[type="email"],
+input[type="text"],
+select,
+textarea{
+	border: 2px solid #333;
+	font-size: 16px;
+	display: block;
+	padding: .5rem .45rem;
+	border-radius: 10px;
+}
+textarea{
+	min-width: 30rem;
+	min-height: 10rem;
+}
+select{
+	min-width: 10rem;
+	background: url(../img/arrow_drop.png) no-repeat center right;
+}
+label{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2rem;
+}
+input::placeholder, textarea::placeholder{
+	color: rgb(75, 64, 170);
+}
+input[type="submit"]{
+	cursor: pointer;
+	font-size: 1.2rem;
+	background-color: rgb(211, 208, 13);
+	color: rgb(7, 35, 160);
+	padding: .5rem .75rem;
+	border: 1px solid rgb(2, 9, 43);
+	border-radius: 10px;
+}
+input[type="submit"]:hover{
+	background-color: rgba(165, 163, 55, 0.39)
+}
+input:focus,
+select:focus,
+textarea:focus{
+	outline: 2px dotted rgb(0, 0, 0);
+}
+.error{
+	position: absolute;
+	display: none;
+	color: red;
+	margin: 0 0 0 0;
+}
+input:invalid{
+	border-color: red;
+}
+.email:invalid + .error{
+	display: block;
+	border-color: red;
+}
+input:valid{
+	border-color: green;
+}
+.email:focus{
+	border-color: blue;
+}
+.red{
+	color: red;
+}
+.description:invalid{
+	border-color: red;
+}
+.description:invalid + .error{
+	display: block;
+	color: red;
+}
+textarea:valid{
+	border-color: green;
+}
