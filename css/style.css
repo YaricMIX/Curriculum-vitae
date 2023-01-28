@@ -6,12 +6,16 @@ body{
 	font-family: 'Inter';
 	font-style: normal;
 	color: #1E1E1E;
+	height: 45000px;
 }
 header{
+	position: fixed;
 	display: flex;
 	background-color: #86A3B4;
 	flex-direction: column;
-	width: 390px;
+	width: 365px;
+	top: -8px;
+	left: -8px;
 }
 hr{
 	border: 6px solid #1E1E1E; 
@@ -24,44 +28,44 @@ hr{
 	line-height: 48px;
 	color: #FFFFFF;
 	flex-direction: column;
-	margin: 58px 85px 36px 40px;
+	margin: 30px 85px 20px 40px;
 }
 .Fullname span{
 	color: #1C2E8C;
 }
 header img{
-	width: 390px;
-	height: 300px;
+	width: 365px;
+	height: 245px;
 }
 .contact{
-	margin: 50px 0 0 40px;
+	margin: 0 0 0 20px;
 }
 .contact h2{
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 }
 .contact-list{
-	margin-top: 31px;
+	margin-top: 15px;
 }
 .contact-list dt{
 	font-size: 24px;
 }
 .contact-list dd{
-	margin: 11px 0 36px 0;
+	margin: 8px 0 10px 0;
 	font-size: 16px;
 }
 ul{
 	list-style-type: none;
 }
 .languages-list{
-	margin: 23px 0 0 0;
+	margin: 10px 0 0 0;
 	padding: 0;
 }
 .languages-list li{
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 	font-size: 20px;
 }
 .main{
-	margin: 58px 0 0 55px;
+	margin: 58px 0 0 430px;
 	width: 700px;
 }
 .main h2{

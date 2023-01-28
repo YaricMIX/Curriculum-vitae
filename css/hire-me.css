@@ -1,7 +1,12 @@
 body{
+}
+.main{
+	position: absolute;
 	width: 1024px;
-	margin: auto;
-	padding: 0;
+	height: 644px;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
 }
 table th, td{
 	border: 0;
