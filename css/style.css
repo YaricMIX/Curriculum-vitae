@@ -1,3 +1,16 @@
+:root{
+	--margin-contact-container: 0 0 0 20px;
+	--margin-bottom-caption-list: 10px;
+	--margin-top-list-elements: 15px;
+	--margin-contant-elemnts-main: 8px 0 10px 0;
+	--margin-languages-list: 10px 0 0 0;
+	--margin-bottom-langugages-elements: 10px;
+	--margin-main-information: 58px 0 0 430px;
+	--margin-bottom-h2: 28px;
+	--margin-main-text: 28px 0 49px 0;
+	--padding-left-skill-list: 20px;
+	--padding-zero: 0;
+}
 h1,h2,h3,h4{
 	text-transform: capitalize;
 }
@@ -5,20 +18,21 @@ body{
 	display: flex;
 	font-family: 'Inter';
 	font-style: normal;
-	color: #1E1E1E;
-	height: 45000px;
+	color: var(--color-text);
 }
 header{
 	position: fixed;
 	display: flex;
-	background-color: #86A3B4;
+	background-color: var(--color-background-header);
 	flex-direction: column;
 	width: 365px;
 	top: -8px;
 	left: -8px;
 }
 hr{
-	border: 6px solid #1E1E1E; 
+	border-color:var(--color-border); 
+	border-style:solid;
+	border-width: 6px;
 	width: 289px; 
 	margin: 0;
 }
@@ -26,87 +40,84 @@ hr{
 	display: flex;
 	font-size: 40px;
 	line-height: 48px;
-	color: #FFFFFF;
+	color: var(--color-name);
 	flex-direction: column;
 	margin: 30px 85px 20px 40px;
 }
 .Fullname span{
-	color: #1C2E8C;
+	color: var(--color-surname);
 }
 header img{
 	width: 365px;
 	height: 245px;
 }
 .contact{
-	margin: 0 0 0 20px;
+	margin: var(--margin-contact-container);
 }
 .contact h2{
-	margin-bottom: 10px;
+	margin-bottom: var(--margin-bottom-caption-list);
 }
 .contact-list{
-	margin-top: 15px;
+	margin-top: var(--margin-top-list-elements);
 }
 .contact-list dt{
 	font-size: 24px;
 }
 .contact-list dd{
-	margin: 8px 0 10px 0;
+	margin: var(--margin-contant-elemnts-main);
 	font-size: 16px;
 }
 ul{
 	list-style-type: none;
 }
 .languages-list{
-	margin: 10px 0 0 0;
-	padding: 0;
+	margin: var(--margin-languages-list);
+	padding: var(--padding-zero);
 }
 .languages-list li{
-	margin-bottom: 10px;
+	margin-bottom: var(--margin-bottom-langugages-elements);
 	font-size: 20px;
 }
 .main{
-	margin: 58px 0 0 430px;
+	margin: var(--margin-main-information);
 	width: 700px;
 }
 .main h2{
-	margin-bottom: 28px;
+	margin-bottom: var(--margin-bottom-h2);
 }
 .main hr{
 	width: auto;
 }
 .about {
-	margin-top: 28px;
-	margin-bottom: 49px;
+	margin: var(--margin-main-text);
 	font-size: 16px;
 }
 .skill-list{
 	list-style-type: disc;
-	margin-top: 28px;
-	padding-left: 20px;
+	margin: var(--margin-main-text);
+	padding-left: var(--padding-left-skill-list);
 	column-count: 2;
 	font-size: 16px;
-	margin-bottom: 49px;
 }
 .skill-list li{
-	color: #263036;
+	color: var(--color-skill-list);
 }
 .experience{
-	margin-top: 31px;
+	margin: var(--margin-main-text);
 	font-size: 14px;
-	padding: 0;
+	padding: var(--padding-zero);
 	text-align: left;
-	margin-bottom: 53px;
 }
 .experience th{
-	padding: 0;
+	padding: var(--padding-zero);
 }
 .experience td{
-	color: rgb(82, 81, 81);
+	color: var(--color-main-text-information);
 }
 .education-list{
-	padding: 0;
-	color: rgb(82, 81, 81);
+	padding: var(--padding-zero);
+	color: var(--color-main-text-information);
 }
 .education-list span{
-	color: #1E1E1E;
+	color: var(--color-text);
 }
