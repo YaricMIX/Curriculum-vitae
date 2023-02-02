@@ -1,15 +1,16 @@
 :root{
 	--margin-contact-container: 0 0 0 20px;
 	--margin-bottom-caption-list: 10px;
-	--margin-top-list-elements: 15px;
-	--margin-contant-elemnts-main: 8px 0 10px 0;
-	--margin-languages-list: 10px 0 0 0;
-	--margin-bottom-langugages-elements: 10px;
-	--margin-main-information: 58px 0 0 430px;
+	--margin-list-elements: 31px 0 35px 0px;
+	--margin-contant-elemnts-main: 11px 0 36px 0;
+	--margin-languages-list: 23px 0 64px 0;
+	--margin-bottom-langugages-elements: 15px;
+	--margin-main-information: 58px 0 0 40px;
 	--margin-bottom-h2: 28px;
-	--margin-main-text: 28px 0 49px 0;
+	--margin-main-text: 28px 0 20px 0;
 	--padding-left-skill-list: 20px;
 	--padding-zero: 0;
+	--margin-zero: 0;
 }
 h1,h2,h3,h4{
 	text-transform: capitalize;
@@ -19,22 +20,28 @@ body{
 	font-family: 'Inter';
 	font-style: normal;
 	color: var(--color-text);
+	margin: var(--margin-zero);
 }
 header{
-	position: fixed;
 	display: flex;
 	background-color: var(--color-background-header);
 	flex-direction: column;
 	width: 365px;
-	top: -8px;
-	left: -8px;
+}
+header h2{
+	font-size: 32px;
 }
 hr{
 	border-color:var(--color-border); 
 	border-style:solid;
 	border-width: 6px;
+}
+header hr{
+	border-color:var(--color-border); 
+	border-style:solid;
+	border-width: 6px;
 	width: 289px; 
-	margin: 0;
+	margin: 15px 0 0 0;
 }
 .Fullname{
 	display: flex;
@@ -42,7 +49,7 @@ hr{
 	line-height: 48px;
 	color: var(--color-name);
 	flex-direction: column;
-	margin: 30px 85px 20px 40px;
+	margin: 58px 0 36px 40px;
 }
 .Fullname span{
 	color: var(--color-surname);
@@ -50,15 +57,13 @@ hr{
 header img{
 	width: 365px;
 	height: 245px;
+	margin-bottom: 50px;
 }
 .contact{
 	margin: var(--margin-contact-container);
 }
-.contact h2{
-	margin-bottom: var(--margin-bottom-caption-list);
-}
 .contact-list{
-	margin-top: var(--margin-top-list-elements);
+	margin: var(--margin-list-elements);
 }
 .contact-list dt{
 	font-size: 24px;
@@ -84,6 +89,7 @@ ul{
 }
 .main h2{
 	margin-bottom: var(--margin-bottom-h2);
+	font-size: 36px;
 }
 .main hr{
 	width: auto;
