@@ -27,6 +27,7 @@ header{
 	background-color: var(--color-background-header);
 	flex-direction: column;
 	width: 365px;
+	box-shadow: 1px 0px 13px 7px #504b4b40;;
 }
 header h2{
 	font-size: 32px;
@@ -58,6 +59,10 @@ header img{
 	width: 365px;
 	height: 245px;
 	margin-bottom: 50px;
+}
+header img:hover{
+	transform: scale(1.76) translateX(75px) translateY(50px);
+	filter: drop-shadow(10px 10px 16px rgba(0, 0, 0, 0.25));
 }
 .contact{
 	margin: var(--margin-contact-container);
@@ -113,6 +118,12 @@ ul{
 	font-size: 14px;
 	padding: var(--padding-zero);
 	text-align: left;
+}
+.experience-first{
+	opacity: 70%;
+}
+.experience-first:hover{
+	opacity: 100%;
 }
 .experience th{
 	padding: var(--padding-zero);
