@@ -27,7 +27,8 @@ header{
 	background-color: var(--color-background-header);
 	flex-direction: column;
 	width: 365px;
-	box-shadow: 1px 0px 13px 7px #504b4b40;;
+	box-shadow: 1px 0px 13px 7px #504b4b40;
+	animation: surfacing  2s;
 }
 header h2{
 	font-size: 32px;
@@ -59,10 +60,13 @@ header img{
 	width: 365px;
 	height: 245px;
 	margin-bottom: 50px;
+	transition: transform 2s;
+	z-index: 1;
 }
 header img:hover{
 	transform: scale(1.76) translateX(75px) translateY(50px);
 	filter: drop-shadow(10px 10px 16px rgba(0, 0, 0, 0.25));
+	z-index: 1;
 }
 .contact{
 	margin: var(--margin-contact-container);
@@ -121,9 +125,11 @@ ul{
 }
 .experience-first{
 	opacity: 70%;
+	transition: 1s;
 }
 .experience-first:hover{
 	opacity: 100%;
+	transition: 1s;
 }
 .experience th{
 	padding: var(--padding-zero);
@@ -137,4 +143,40 @@ ul{
 }
 .education-list span{
 	color: var(--color-text);
+}
+.Fullname, header img, .contact-wrapper, .languages-wrapper, .summary-wrapper, .skills-wrapper, .learning-wrapper, .education-wrapper{
+	opacity: 0;
+	animation: surfacing 2s 1 forwards linear;
+}
+.languages-wrapper{
+	animation-delay: 0.5s;
+}
+.contact-wrapper{
+	animation-delay: 1s;
+}
+header img{
+	animation-delay: 1.5s;
+}
+.Fullname {
+	animation-delay: 2s;
+}
+.education-wrapper{
+	animation-delay: 0.5s;
+}
+.learning-wrapper{
+	animation-delay: 1s;
+}
+.skills-wrapper{
+	animation-delay: 1.5s;
+}
+.summary-wrapper{
+	animation-delay: 2s;
+}
+@keyframes surfacing {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
