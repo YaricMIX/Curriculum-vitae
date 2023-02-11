@@ -1,0 +1,49 @@
+@media screen and (max-width: 950px) {
+	body{
+		flex-direction: column;
+	}
+	header{
+		width: 100%;
+	}
+	header{
+		img{
+			display: block;
+			margin: 0 auto 50px auto;
+		}
+		img:hover{
+			transform: none;
+			filter: none;
+		}
+	}
+	.Fullname{
+		margin: 58px auto 36px auto;
+	}
+	.contact{
+		margin: 0 auto;
+	}
+	.main{
+		margin: 0 auto;
+	}
+	.about{
+		font-size: 16px;
+	}
+}
+@media screen and (max-width: 780px) {
+	header{
+		width: 100%;
+	}
+	.main{
+		width: auto;
+		margin: 32px 29px 0px 28px;
+	}
+}
+@media screen and (max-width: 385px) {
+	header{
+		img{
+			width: 100%;
+		}
+	}
+	.Fullname{
+		margin: 58px 85px 36px 40px;
+	}
+}
