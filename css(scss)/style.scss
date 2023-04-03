@@ -34,6 +34,16 @@ h1,h2,h3,h4{
 ul{
 	list-style-type: none;
 }
+.nav-letter {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border: 2px solid black;
+	text-align: center;
+	font-size: 25px;
+	line-height: 20px;
+	margin-right: 10px;
+}
 header{
 	display: flex;
 	background-color: var(--color-background-header);
@@ -58,15 +68,10 @@ header {
 		width: 365px;
 		height: 245px;
 		margin-bottom: 50px;
-		transition: transform 2s;
-		z-index: 1;
-	}
-	img:hover{
-		transform: scale(1.76) translateX(75px) translateY(50px);
-		filter: drop-shadow(10px 10px 16px rgba(0, 0, 0, 0.25));
 		z-index: 1;
 	}
 }
+
 hr{
 	border-color:var(--color-border); 
 	border-style:solid;

@@ -13,10 +13,10 @@
 <body class="main-theme">
 	<header>
 		<h1 class="Fullname">Yaroslav <span>Livachov</span></h1>
-		<img src="./img/my photo.jpg">
+		<img src="./img/my photo.jpg" onclick="toggleZoom(this)">
 		<div class="contact">
-			<div class="contact-wrapper">
-				<h2>Contact</h2>
+			<div id="c" class="contact-wrapper">
+				<h2><span class="nav-letter">c</span>Contact</h2>
 				<hr>
 				<dl class="contact-list">
 					<dt>Address</dt>
@@ -31,8 +31,8 @@
 					<dd><a href="./hire-me.html">hire-me.html</a></dd>
 				</dl>
 			</div>
-			<div class="languages-wrapper">
-				<h2>Languages</h2>
+			<div id="g" class="languages-wrapper">
+				<h2><span class="nav-letter">g</span>Languages</h2>
 				<hr>
 				<ul class="languages-list">
 					<li>Ukrainian - B2</li>
@@ -42,13 +42,13 @@
 		</div>
 	</header>
 	<section class="main">
-		<div class="summary-wrapper">
-			<h2>Summary</h2>
+		<div id="s" class="summary-wrapper">
+			<h2><span class="nav-letter">s</span>Summary</h2>
 			<hr>
 			<p class="about">I am a first-year student at the Kharkov Aerospace Institute, before that I studied at the Zaporozhye Academic Lyceum No. 34 and graduated from there 11 classes, I also study the frontend in robotdreams.</p>
 		</div>
-		<div class="skills-wrapper">
-			<h2>Skills Highlights</h2>
+		<div id="h" class="skills-wrapper">
+			<h2><span class="nav-letter">h</span>Skills Highlights</h2>
 			<hr>
 			<ul class="skill-list">
 				<li>HTML</li>
@@ -61,8 +61,8 @@
 				<li>Office</li>
 			</ul>
 		</div>
-		<div class="learning-wrapper">
-			<h2>Learning experience</h2>
+		<div id="l" class="learning-wrapper">
+			<h2><span class="nav-letter">l</span>Learning experience</h2>
 			<hr>
 			<table class="experience experience-second" cellspacing="0" cellpadding="0">
 				<tbody>
@@ -97,8 +97,8 @@
 				</tbody>
 			</table>
 		</div>
-		<div class="education-wrapper">
-			<h2>Education</h2>
+		<div id="e" class="education-wrapper">
+			<h2><span class="nav-letter">e</span>Education</h2>
 			<hr>
 			<ul class="education-list">
 				<li><span>Dates of studying:</span> from 2023 - present</li>
@@ -106,5 +106,6 @@
 			</ul>
 		</div>
 	</section>
+	<script src="./js/script.js"></script>
 </body>
 </html>
