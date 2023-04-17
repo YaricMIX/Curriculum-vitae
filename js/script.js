@@ -71,3 +71,23 @@ function handleKeyPress(event) {
 	}
 }
 	window.addEventListener('keydown', handleKeyPress);
+
+fetch('https://api.github.com/users/YaricMIX/repos')
+.then(response => response.json())
+.then(data => {
+	data.forEach(repo => {
+		const projectList = document.getElementById('projects-list');
+		const li = document.createElement('li');
+		const a = document.createElement('a');
+		a.href = repo.html_url;
+		a.textContent = repo.full_name;
+		li.appendChild(a);
+		if (repo.description) {
+			const p = document.createElement('p');
+			p.textContent = repo.description;
+			li.appendChild(p);
+		}
+		projectList.appendChild(li);
+	});
+})
+.catch(error => console.error(error));

@@ -175,7 +175,7 @@ hr{
 		color: var(--color-text);
 	}
 }
-.Fullname, header img, .contact-wrapper, .languages-wrapper, .summary-wrapper, .skills-wrapper, .learning-wrapper, .education-wrapper{
+.Fullname, header img, .contact-wrapper, .languages-wrapper, .summary-wrapper, .skills-wrapper, .learning-wrapper, .education-wrapper, .project-wrapper{
 	opacity: 0;
 	animation: surfacing 1 forwards linear;
 	@include animationspeed(5s);
@@ -191,6 +191,9 @@ header img{
 }
 .Fullname {
 	animation-delay: 2s;
+}
+.project-wrapper{
+	animation-delay: 0.1s;
 }
 .education-wrapper{
 	animation-delay: 0.5s;
