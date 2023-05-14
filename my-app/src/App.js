@@ -1,7 +1,8 @@
 import './App.css';
 import { Resumeimage } from './image';
 import { ContactInformation } from './Contact';
-import { LearningExperience } from './Learning';
+import { Studies } from './StudyExperience';
+import { CounterExperience} from './Counter';
 
 const imagePath = './photo.jpg';
 
@@ -16,7 +17,10 @@ function App() {
           </div>
         </div>
         <div>
-        <LearningExperience />
+        <Studies />
+        </div>
+        <div>
+          <CounterExperience />
         </div>
       </div>
   );
