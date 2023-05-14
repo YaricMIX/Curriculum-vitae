@@ -3,8 +3,10 @@ import { Resumeimage } from './image';
 import { ContactInformation } from './Contact';
 import { Studies } from './StudyExperience';
 import { CounterExperience} from './Counter';
+import { GitHubRepositories } from './Repositories';
 
 const imagePath = './photo.jpg';
+const githubUsername = 'YaricMIX';
 
 function App() {
   return (
@@ -21,6 +23,9 @@ function App() {
         </div>
         <div>
           <CounterExperience />
+        </div>
+        <div>
+            <GitHubRepositories username={githubUsername} />
         </div>
       </div>
   );
